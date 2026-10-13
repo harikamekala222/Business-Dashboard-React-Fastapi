@@ -27,7 +27,7 @@ function App() {
 
     // CITY-WISE API
 
-    axios.get("http://127.0.0.1:8000/city-wise")
+    axios.get("/city-wise")
       .then((response) => {
 
         const formattedCityData = response.data.map((item) => ({
@@ -47,7 +47,7 @@ function App() {
 
     // CATEGORY-WISE API
 
-    axios.get("http://127.0.0.1:8000/category-wise")
+    axios.get("/category-wise")
       .then((response) => {
 
         const formattedCategoryData = response.data.map((item) => ({
@@ -67,7 +67,7 @@ function App() {
 
     // SOURCE-WISE API
 
-    axios.get("http://127.0.0.1:8000/source-wise")
+    axios.get("/source-wise")
       .then((response) => {
 
         const formattedSourceData = response.data.map((item) => ({
